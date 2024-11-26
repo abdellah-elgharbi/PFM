@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "945340095904",
+    "project_id": "myproject-a4693",
+    "storage_bucket": "myproject-a4693.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:945340095904:android:3772365c4ebd3fbfccd8c5",
+        "android_client_info": {
+          "package_name": "ma.ensa.pfm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYTKVRWCdkP8f2_le_rK7Uhm3oosWjiXU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

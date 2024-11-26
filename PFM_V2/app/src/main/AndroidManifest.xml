@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ma.ensa.pfm">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        tools:ignore="AllowBackup"
+        android:theme="@style/AppTheme"> <!-- Thème global pour l'application -->
+
+        <!-- Activités avec le bon nom de package -->
+        <activity android:name="ma.ensa.pfm.activities.UserdataActivity"></activity>
+        <activity android:name="ma.ensa.pfm.activities.History" />
+        <activity android:name="ma.ensa.pfm.activities.MyPin" />
+        <activity android:name="ma.ensa.pfm.activities.About" />
+        <activity android:name="ma.ensa.pfm.activities.FoodMap" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBtAubRGSlTZanGLTPT3JrKWsRCFAXZzrE" />
+
+        <activity android:name="ma.ensa.pfm.activities.Receive" />
+        <activity android:name="ma.ensa.pfm.activities.Contact" />
+        <activity android:name="ma.ensa.pfm.activities.Signup" />
+        <activity android:name="ma.ensa.pfm.activities.Logup" />
+        <activity android:name="ma.ensa.pfm.activities.MainActivity" />
+        <activity android:name="ma.ensa.pfm.activities.Donate" />
+        <activity android:name="ma.ensa.pfm.activities.landingpage"
+            android:theme="@style/AppTheme"> <!-- Appliquer un thème AppCompat à l'activité landingpage -->
+        </activity>
+        <activity
+            android:name="ma.ensa.pfm.activities.SplashScreen"
+            android:exported="true"
+            android:theme="@style/SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
